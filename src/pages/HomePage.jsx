@@ -3,7 +3,9 @@ import desktop from '../assets/imageOne.jpg'
 import magnification from '../assets/imageTwo.jpg'
 import './pageStyling/HomePage.css'
 import FAQ from '../components/FAQ/FAQ'
-<style>@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');</style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+</style>
 
 
 const HomePage = () => {

@@ -73,6 +73,10 @@
       background-color: #4F46E5;
       padding: 10px 0;
   }
+
+  .logo{
+    height: 30px;
+  }
 }
 
 /* Specific styles for very small screens */
