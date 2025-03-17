@@ -1,0 +1,234 @@
+* {
+    margin: 0%;
+    box-sizing: border-box;
+    max-width: 100vw;
+    font-family: 'Inter';
+    align-items: center;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-from-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.8s ease-out;
+}
+
+.animate-from-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.8s ease-out;
+}
+
+.animate-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.SectionOne {
+    height: auto;
+    min-width: 100vw;
+    background-image: url(../assets/mainImage.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.mainText {
+    background: linear-gradient(45deg, #4dca79, #1cbddd);
+    padding: 24px 40px 32px 40px;
+    gap:20px;
+    border-radius: 8px;
+    max-width: 630px;
+    margin-top: 325px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+.sampleText{
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.mainText h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -2%;
+}
+
+.mainButton {
+    background-color: #f28d35;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.mainButton:hover {
+    background-color: #90b6e1;
+    border: 0.5px solid #f28d35;
+}
+
+.containerOne {
+    max-width: 896px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 5%;
+    padding: 5%;
+  }
+
+.containerTwo {
+      max-width: 896px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      padding: 5%;
+    }
+.containerTwoText {
+    width: 530px;
+    font-size: 16px;
+    gap: 20px;
+  }
+.containerOneText {
+    width: 530px;
+    font-size: 16px;
+    gap: 20px;
+  }
+  
+.ContainerTextHeading {
+    font-size: 27px;
+    color: #4f46e5;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: 0.4px;
+    margin-top: -5%;
+  }
+  
+.learnMore-btn {
+    background-color: #f28d35;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    min-width: 129px;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    letter-spacing: -0.02em;
+  }
+
+.learnMore-btn:hover{
+    background-color: #90b6e1;
+    border: 0.5px solid #f28d35;
+  }
+
+@media screen and (max-width: 768px) {
+
+    .SectionOne {
+      background-size: 768px auto;
+      background-attachment: fixed;
+      height: auto;
+      background-repeat: no-repeat;
+      display: flex;
+      background-size: cover;
+  }
+    .mainText{
+      margin-left: 0;
+      margin-right: 0;
+      max-width: 768px;
+      margin-top: 525px;
+      margin-bottom: 0;
+      border-radius: 0;
+
+    }
+    .containerOneText {
+
+      padding: 3%;
+    
+  }
+  .containerTwoText {
+
+    padding: 3%;
+  
+}
+}
+
+  @media screen and (max-width: 476px) {
+
+    .SectionOne {
+      background-size: 476px auto;
+      background-attachment: scroll;
+      background-position:top center;
+      padding-top: 0;
+      margin-top: 10%;
+      min-height: 200px; 
+    }
+    
+    .mainText {
+      margin-top: 0; 
+      position: relative;
+      top: 200px; 
+    }
+    .mainText h1{
+      font-size: 36px;
+    }
+
+    .containerTwo{
+      flex-direction: column-reverse;
+      text-align: center;
+
+      
+    }
+    .containerOne{
+      flex-direction: column;
+      text-align: center;
+      margin-top: 40%;
+      
+    }
+
+    .sampleText{
+      max-width: 100%;
+      font-size: 16px;
+    }
+    
+  }
+
+  @media screen and (max-width:375px) {
+
+    .SectionOne{
+      margin-top: 15%;
+    }
+    .mainText{
+      margin-top: -5%;
+    }
+  }
