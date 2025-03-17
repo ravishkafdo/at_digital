@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
+    font-family: "Inter", sans-serif;
+}
+
+.SectionOne {
+    width: 1440px;
+    height: 700px;
+    background-image: url(../../assets/mainImage.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.mainText {
+    background: linear-gradient(45deg, #4dca79, #1cbddd);
+    padding: 24px 40px 32px 40px;
+    gap:20px;
+    border-radius: 8px;
+    max-width: 630px;
+    height: 354px;
+    margin-top: 325px;
+    margin-left: 80px;
+}
+
+.mainText h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -2%;
+}
+
+.mainButton {
+    background-color: #f28d35;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.mainButton:hover {
+    background-color: #90b6e1;
+    border: 0.5px solid #f28d35;
+}
+@media screen and (max-width: 768px) {
+
+    .SectionOne{
+        width: 768px;
+        height: 448px;
+        margin-top: 77px;
+    
+    }
+   .mainText{
+    background: linear-gradient(45deg, #4dca79, #1cbddd);
+    padding: 24px 40px 32px 40px;
+    gap:20px;
+    border-radius: 0px;
+    min-width: 100vw;
+    height: auto;
+    min-height: 258px;
+    margin-top: 448px;
+    margin-left: 0;
+    
+   }
+   .mainText h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -2%;
+}
+}
+@media screen and (max-width: 375px) {
+
+    .SectionOne{
+        width: 768px;
+        height: 448px;
+        margin-top: 77px;
+    
+    }
+   .mainText{
+    background: linear-gradient(45deg, #4dca79, #1cbddd);
+    padding: 24px 40px 32px 40px;
+    gap:20px;
+    border-radius: 0px;
+    min-width: 100vw;
+    height: auto;
+    min-height: 258px;
+    margin-top: 448px;
+    margin-left: 0;
+    
+   }
+   .mainText h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -2%;
+}
+}
