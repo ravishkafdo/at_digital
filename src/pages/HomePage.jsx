@@ -3,6 +3,7 @@ import desktop from '../assets/imageOne.jpg'
 import magnification from '../assets/imageTwo.jpg'
 import './pageStyling/HomePage.css'
 import FAQ from '../components/FAQ/FAQ'
+//Inter Font imported here
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 </style>
@@ -11,12 +12,12 @@ import FAQ from '../components/FAQ/FAQ'
 const HomePage = () => {
   return (
   <>
+
     <div className="SectionOne">
      <div className="mainText">
       <h1>We Crush Your Competitors, Goals, And Sales Records - Without The B.S.</h1>
       <button className='mainButton'> GET FREE CONSULTATION</button>
      </div>
-     
     </div>
 
 
@@ -32,8 +33,10 @@ const HomePage = () => {
       </div>
 
     </div>
-    <div className='containerTwo'>
 
+
+
+    <div className='containerTwo'>
 
       <div className="containerTwoText">
         <h1 className='ContainerTextHeading'>Digital Strategy Consulting</h1>
@@ -45,6 +48,8 @@ const HomePage = () => {
          <img className="desktopImg" src={magnification}/>
 
     </div>
+
+
     <FAQ/>
   </>
   )
