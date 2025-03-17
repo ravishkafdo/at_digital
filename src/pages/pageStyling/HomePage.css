@@ -2,8 +2,47 @@
     margin: 0%;
     box-sizing: border-box;
     max-width: 100vw;
-    font-family: "Inter";
+    font-family: 'Inter';
     align-items: center;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-from-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.8s ease-out;
+}
+
+.animate-from-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.8s ease-out;
+}
+
+.animate-visible {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .SectionOne {
@@ -149,16 +188,16 @@
     .SectionOne {
       background-size: 476px auto;
       background-attachment: scroll;
-      background-position:top center; /* Align to top */
-      padding-top: 0; /* Remove any top padding */
+      background-position:top center;
+      padding-top: 0;
       margin-top: 10%;
-      min-height: 200px; /* Set a minimum height to accommodate the navbar */
+      min-height: 200px; 
     }
     
     .mainText {
-      margin-top: 0; /* Remove the large top margin */
+      margin-top: 0; 
       position: relative;
-      top: 200px; /* Adjust this value based on your image height */
+      top: 200px; 
     }
     .mainText h1{
       font-size: 36px;

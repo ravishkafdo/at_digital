@@ -11,12 +11,12 @@ const FAQ = () => {
         "Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.",
     },
     {
-      question: "Conditional Rendering?",
+      question: "How Reliable are We?",
       answer:
         "Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.",
     },
     {
-      question: "Flexible bla bla bla?",
+      question: "Can I get a flexible payment schedule?",
       answer:
         "Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.",
     },

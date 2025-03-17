@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.maintenance-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+  font-family: "Inter";
+  padding: 20px;
+}
+
+.maintenance-content {
+  background: white;
+  border-radius: 8px;
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.maintenance-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(45deg, #4dca79, #1cbddd);
+}
+
+.maintenance-content h1 {
+  color: #4f46e5;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+.message {
+  font-size: 16px;
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.progress-container {
+  background: #f3f4f6;
+  height: 12px;
+  border-radius: 6px;
+  margin: 30px 0;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(45deg, #4dca79, #1cbddd);
+  width: 0;
+  transition: width 0.3s ease;
+  border-radius: 6px;
+}
+
+.progress-text {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.contact-info {
+  margin-top: 30px;
+}
+
+.contact-info p {
+  color: #4b5563;
+  margin-bottom: 15px;
+}
+
+.contact-button {
+  background-color: #f28d35;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #90b6e1;
+  border: 0.5px solid #f28d35;
+}
+
+.tools-animation {
+  position: relative;
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+.gear {
+  width: 60px;
+  height: 60px;
+  background: #e0e7ff;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+}
+
+.gear-left {
+  left: 40%;
+  transform-origin: center;
+  animation: spin 10s linear infinite;
+}
+
+.gear-right {
+  left: 55%;
+  transform-origin: center;
+  animation: spin-reverse 8s linear infinite;
+}
+
+.gear::before,
+.gear::after {
+  content: '';
+  position: absolute;
+  background: #6366f1;
+  border-radius: 2px;
+}
+
+.gear::before {
+  width: 80%;
+  height: 16%;
+  top: 42%;
+  left: 10%;
+}
+
+.gear::after {
+  width: 16%;
+  height: 80%;
+  top: 10%;
+  left: 42%;
+}
+
+.wrench {
+  position: absolute;
+  width: 12px;
+  height: 50px;
+  background: #6366f1;
+  border-radius: 4px;
+  top: 35px;
+  left: 48%;
+  transform-origin: center;
+  animation: wrench-rotate 3s ease-in-out infinite;
+}
+
+.wrench::before,
+.wrench::after {
+  content: '';
+  position: absolute;
+  background: #6366f1;
+  border-radius: 4px;
+}
+
+.wrench::before {
+  width: 24px;
+  height: 12px;
+  top: -6px;
+  left: -6px;
+}
+
+.wrench::after {
+  width: 24px;
+  height: 12px;
+  bottom: -6px;
+  left: -6px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes spin-reverse {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+
+@keyframes wrench-rotate {
+  0%, 100% { transform: rotate(-20deg); }
+  50% { transform: rotate(20deg); }
+}
+
+@media screen and (max-width: 768px) {
+  .maintenance-content {
+    padding: 30px 20px;
+  }
+  
+  .maintenance-content h1 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 476px) {
+  .maintenance-content h1 {
+    font-size: 24px;
+  }
+  
+  .tools-animation {
+    height: 100px;
+  }
+  
+  .gear {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .gear-left {
+    left: 35%;
+  }
+  
+  .gear-right {
+    left: 55%;
+  }
+}
