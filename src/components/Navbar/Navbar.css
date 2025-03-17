@@ -1,26 +1,89 @@
-
-.basics{
-    background-color: #4F46E5 !important;
-    gap:28px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+.basics {
+  background-color: #4F46E5 !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 0;
 }
 
-.me-auto{
-    align-items: left !important;
-    justify-items: left !important;
-    text-align: left !important;
-    justify-content: left !important;
-}
 .nav-container {
-    display: flex;
-    justify-content: space-between; /* Pushes content apart */
-    align-items: center; /* Aligns items vertically */
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-links {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-links .nav-link {
+  color: white !important;
+  font-weight: 500;
+  padding: 8px 0;
+  position: relative;
+}
+
+.active-link {
+  color: white !important;
+  font-weight: 600;
+}
+
+.active-link:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+/* Hamburger toggle button styling */
+.hamburger-toggle {
+  border: none !important;
+}
+
+.hamburger-toggle:focus {
+  box-shadow: none !important;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
   .nav-links {
-    margin-left: auto; /* Pushes navigation links to the right */
+      gap: 0;
+      width: 100%;
+      padding-top: 1rem;
   }
   
+  .nav-links .nav-link {
+      padding: 10px 0;
+  }
+  
+  .navbar-collapse {
+      background-color: #4F46E5;
+      padding: 10px 0;
+  }
+}
+
+/* Specific styles for very small screens */
+@media (max-width: 375px) {
+  .navbar-brand img {
+      height: 30px;
+  }
+  
+  .hamburger-toggle {
+      padding: 4px 8px;
+  }
+}

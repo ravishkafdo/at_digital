@@ -8,48 +8,77 @@ import "./Navbar.css";
 
 function BootstrapNav() {
   const [activePage, setActivePage] = useState("home");
+  const [expanded, setExpanded] = useState(false);
 
   return (
     <>
-      <Navbar bg="primary" data-bs-theme="dark" className="basics" fixed="top">
+      <Navbar 
+        bg="primary" 
+        data-bs-theme="dark" 
+        className="basics" 
+        fixed="top"
+        expand="md" 
+        expanded={expanded}
+      >
         <Container className="nav-container">
           <Nav.Link 
             href="#home" 
-            className={activePage === "home" ? "active-link" : ""}
+            className={`navbar-brand ${activePage === "home" ? "active-link" : ""}`}
             onClick={() => setActivePage("home")}
           >
-            <img src={NavLogo} alt="Logo" />
+            <img src={NavLogo} alt="Logo" className="logo" />
           </Nav.Link>
-          <Nav className="nav-links">
-            <Nav.Link
-              href="#services"
-              className={activePage === "services" ? "active-link" : ""}
-              onClick={() => setActivePage("services")}
-            >
-              Services
-            </Nav.Link>
-            <Nav.Link
-              href="#about"
-              className={activePage === "about" ? "active-link" : ""}
-              onClick={() => setActivePage("about")}
-            >
-              About
-            </Nav.Link>
-            <Nav.Link
-              href="#contact"
-              className={activePage === "contact" ? "active-link" : ""}
-              onClick={() => setActivePage("contact")}
-            >
-              Contact Us
-            </Nav.Link>
-            <Nav.Link
-              href="#careers"
-              className={activePage === "careers" ? "active-link" : ""}
-              onClick={() => setActivePage("careers")}
-            >
-              Careers
-            </Nav.Link>
-          </Nav>
+          
+          <Navbar.Toggle 
+            aria-controls="responsive-navbar-nav" 
+            onClick={() => setExpanded(expanded ? false : "expanded")}
+            className="hamburger-toggle"
+          />
+          
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="nav-links">
+              <Nav.Link
+                href="#services"
+                className={activePage === "services" ? "active-link" : ""}
+                onClick={() => {
+                  setActivePage("services");
+                  setExpanded(false);
+                }}
+              >
+                Services
+              </Nav.Link>
+              <Nav.Link
+                href="#about"
+                className={activePage === "about" ? "active-link" : ""}
+                onClick={() => {
+                  setActivePage("about");
+                  setExpanded(false);
+                }}
+              >
+                About Us
+              </Nav.Link>
+              <Nav.Link
+                href="#contact"
+                className={activePage === "contact" ? "active-link" : ""}
+                onClick={() => {
+                  setActivePage("contact");
+                  setExpanded(false);
+                }}
+              >
+                Contact Us
+              </Nav.Link>
+              <Nav.Link
+                href="#careers"
+                className={activePage === "careers" ? "active-link" : ""}
+                onClick={() => {
+                  setActivePage("careers");
+                  setExpanded(false);
+                }}
+              >
+                Careers
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </>
