@@ -28,7 +28,7 @@ const FAQ = () => {
 
   return (
     <section className="faq-section">
-      <h2>Frequently asked questions</h2>
+      <h2 className="faqHeading">Frequently asked questions</h2>
       <div className="faq-container">
         {faqs.map((faq, index) => (
           <div key={index} className={`faq-item ${activeIndex === index ? "active" : ""}`}>

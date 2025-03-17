@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-main">
           <div className="footer-info">
-            <img src={logo || "/placeholder.svg"} alt="AT Digital Logo" className="footer-logo" />
+            <img src={logo} alt="AT Digital Logo" className="footer-logo" />
             <p className="footer-description">
               Your goal is our target. Not anything in between. We use online marketing platforms and tools to achieve
               single objective - your business results.
@@ -16,7 +16,7 @@ const Footer = () => {
 
           <div className="footer-links">
             <div className="footer-column">
-              <h3>Our Technologies</h3>
+              <h3 className="column-heads">Our Technologies</h3>
               <ul>
                 <li>
                   <a href="#">ReactJS</a>

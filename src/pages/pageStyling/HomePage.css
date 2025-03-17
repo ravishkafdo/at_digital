@@ -29,6 +29,7 @@
 }
 .sampleText{
   font-weight: 400;
+  font-size: 16px;
 }
 
 .mainText h1 {
@@ -42,7 +43,7 @@
     background-color: #f28d35;
     padding: 12px 20px;
     border-radius: 4px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
     color: white;
     border: none;
@@ -65,7 +66,8 @@
     margin-top: 5%;
     padding: 5%;
   }
-  .containerTwo {
+
+.containerTwo {
       max-width: 896px;
       display: flex;
       gap: 20px;
@@ -74,18 +76,18 @@
       margin: auto;
       padding: 5%;
     }
-  .containerTwoText {
+.containerTwoText {
     width: 530px;
     font-size: 16px;
     gap: 20px;
   }
-  .containerOneText {
+.containerOneText {
     width: 530px;
     font-size: 16px;
     gap: 20px;
   }
   
-  .ContainerTextHeading {
+.ContainerTextHeading {
     font-size: 27px;
     color: #4f46e5;
     font-weight: 600;
@@ -94,7 +96,7 @@
     margin-top: -5%;
   }
   
-  .learnMore-btn {
+.learnMore-btn {
     background-color: #f28d35;
     color: white;
     padding: 12px 20px;
@@ -106,7 +108,12 @@
     letter-spacing: -0.02em;
   }
 
-  @media screen and (max-width: 768px) {
+.learnMore-btn:hover{
+    background-color: #90b6e1;
+    border: 0.5px solid #f28d35;
+  }
+
+@media screen and (max-width: 768px) {
 
     .SectionOne {
       background-size: 768px auto;
