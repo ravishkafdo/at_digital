@@ -23,10 +23,12 @@
     gap:20px;
     border-radius: 8px;
     max-width: 630px;
-    height: 354px;
     margin-top: 325px;
     margin-left: 80px;
     margin-bottom: 20px;
+}
+.sampleText{
+  font-weight: 400;
 }
 
 .mainText h1 {
@@ -52,18 +54,30 @@
     background-color: #90b6e1;
     border: 0.5px solid #f28d35;
 }
+
 .containerOne {
     max-width: 896px;
     display: flex;
     gap: 20px;
     align-items: center;
     justify-content: center;
-    margin: 0 auto; 
-    padding: 2%;
+    margin: auto;
+    margin-top: 5%;
+    padding: 5%;
   }
-  .containerOneText {
+  .containerTwo {
+      max-width: 896px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      padding: 5%;
+    }
+  .containerTwoText {
     width: 530px;
     font-size: 16px;
+    gap: 20px;
   }
   
   .ContainerTextHeading {
@@ -89,6 +103,8 @@
   @media screen and (max-width: 768px) {
 
     .SectionOne {
+      background-size: 768px auto;
+      background-attachment: fixed;
       height: auto;
       background-repeat: no-repeat;
       display: flex;
@@ -96,24 +112,73 @@
   }
     .mainText{
       margin-left: 0;
+      margin-right: 0;
       max-width: 768px;
       margin-top: 525px;
+      margin-bottom: 0;
+      border-radius: 0;
 
     }
+    .containerOneText {
 
+      padding: 3%;
     
   }
+  .containerTwoText {
 
-  @media screen and (max-width: 375px) {
+    padding: 3%;
+  
+}
+}
 
+  @media screen and (max-width: 476px) {
+
+    .SectionOne {
+      background-size: 476px auto;
+      background-attachment: scroll;
+      background-position:top center; /* Align to top */
+      padding-top: 0; /* Remove any top padding */
+      margin-top: 10%;
+      min-height: 200px; /* Set a minimum height to accommodate the navbar */
+    }
+    
+    .mainText {
+      margin-top: 0; /* Remove the large top margin */
+      position: relative;
+      top: 200px; /* Adjust this value based on your image height */
+    }
     .mainText h1{
       font-size: 36px;
     }
 
-    .containerOne{
-      display: block;
+    .containerTwo{
+      flex-direction: column-reverse;
       text-align: center;
+
+      
+    }
+    .containerOne{
+      flex-direction: column;
+      text-align: center;
+      margin-top: 40%;
+      
     }
 
+    .sampleText{
+      max-width: 100%;
+      font-size: 16px;
+    }
     
+  }
+
+  @media screen and (max-width:375px) {
+
+    .SectionOne{
+      margin-top: 15%;
+    }
+    .mainText{
+      margin-top: -5%;
+    }
+    .containerOne{
+    }
   }
