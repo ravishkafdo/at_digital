@@ -1,7 +1,26 @@
+
+.basics{
+    background-color: #4F46E5 !important;
+    gap:28px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 .me-auto{
-    max-width: 226px;
-    height: auto;
+    align-items: left !important;
+    justify-items: left !important;
+    text-align: left !important;
+    justify-content: left !important;
 }
-.primary{
-    background-color: blue;
-}
+.nav-container {
+    display: flex;
+    justify-content: space-between; /* Pushes content apart */
+    align-items: center; /* Aligns items vertically */
+  }
+  
+  .nav-links {
+    margin-left: auto; /* Pushes navigation links to the right */
+  }
+  
